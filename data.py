@@ -1,3 +1,4 @@
+from pathlib import Path
 from faker import Faker
 
 fake = Faker()
@@ -24,4 +25,4 @@ class RecipeData:
     INGREDIENT_WEIGHT = 15 
     COOKING_TIME = 15
     DESCRIPTION = 'что-то'
-    PHOTO_LINK = 'C:/Users/M.Komarova/Desktop/ALL/IMAGE-TO-VIDEO/Animal_Category/bird.jpg'
+    PHOTO_LINK = PHOTO_LINK = str(Path("image_data/bird.jpg").resolve())
